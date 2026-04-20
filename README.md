@@ -29,7 +29,7 @@ IntervAI is a full-stack, single-page web application designed to simulate real-
 3. Run locally: `npm run dev`
 
 ## Deployment
-Recommended to be deployed on Google Cloud via Firebase Hosting. 
+Deployed on Google Cloud via Firebase Hosting. 
 
 1. `npm install -g firebase-tools`
 2. `firebase login`
