@@ -1,16 +1,38 @@
-# React + Vite
+# IntervAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Practice. Get Feedback. Get Hired.**
 
-Currently, two official plugins are available:
+IntervAI is a full-stack, single-page web application designed to simulate real-world job interviews using Artificial Intelligence. Powered by the Google Gemini API, it allows candidates to practice customized interview questions tailored strictly to their desired role, experience level, and interview type.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **🎯 Role-Specific Configuration**: Select from Software Engineer, Product Manager, Data Analyst, UX Designer, and more alongside seniority levels.
+- **🤖 Gemini-Powered Interrogation**: Dynamically generates context-aware questions instantly.
+- **📈 Real-Time Feedback Evaluation**: Receive instantaneous scoring out of 10, strengths, improvement areas, and model ideal answers after every response.
+- **📊 Comprehensive Post-Interview Report**: Displays an interactive Recharts Donut distribution of performance efficiency and overarching feedback.
+- **✨ Premium Dark UI**: Smooth, glassmorphic aesthetic built purely with vanilla CSS and Lucide React icons.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the ESLint configuration
+- React + Vite
+- Recharts
+- `@google/generative-ai` (Gemini 2.5 Flash Model)
+- Vanilla CSS 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Local Setup
+
+1. Clone the repository: `git clone https://github.com/YOUR_USERNAME/IntervAI.git`
+2. Install dependencies: `npm install`
+3. Create a `.env` file referencing your Gemini key:
+   ```env
+   VITE_GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+4. Run locally: `npm run dev`
+
+## Deployment
+Recommended to be deployed on Google Cloud via Firebase Hosting. 
+
+1. `npm install -g firebase-tools`
+2. `firebase login`
+3. `firebase init hosting`
+4. `npm run build && firebase deploy`
