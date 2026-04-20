@@ -21,13 +21,12 @@ IntervAI is a full-stack, single-page web application designed to simulate real-
 
 ## Local Setup
 
-1. Clone the repository: `git clone https://github.com/YOUR_USERNAME/IntervAI.git`
-2. Install dependencies: `npm install`
-3. Create a `.env` file referencing your Gemini key:
+1. Install dependencies: `npm install`
+2. Create a `.env` file referencing your Gemini key:
    ```env
    VITE_GEMINI_API_KEY=your_gemini_api_key_here
    ```
-4. Run locally: `npm run dev`
+3. Run locally: `npm run dev`
 
 ## Deployment
 Recommended to be deployed on Google Cloud via Firebase Hosting. 
